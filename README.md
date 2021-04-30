@@ -5,9 +5,13 @@ Home: https://github.com/dchevell/flask-executor
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-executor-feedstock/blob/master/LICENSE.txt)
 
 Summary: Adds concurrent.futures support to Flask
+
+Development: https://github.com/dchevell/flask-executor
+
+Documentation: https://flask-executor.readthedocs.io/
 
 Flask-Executor is an easy to use wrapper for the concurrent.futures module that lets you initialise and configure executors via common Flask application patterns. It's a great way to get up and running fast with a lightweight in-process task queue.
 
