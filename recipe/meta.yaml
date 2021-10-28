@@ -1,5 +1,5 @@
 {% set name = "Flask-Executor" %}
-{% set version = "0.9.4" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 31b4a1141515214abc67b5f35507e5625ca33894f897afd422d5bfe223804242
+  sha256: ddb51b9e10f0fbfcff6c2386a5d92957402b7c81b7614eb1f3c77be64bcfd684
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - flask
 
 test:
