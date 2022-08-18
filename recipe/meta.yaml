@@ -1,5 +1,5 @@
 {% set name = "Flask-Executor" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ddb51b9e10f0fbfcff6c2386a5d92957402b7c81b7614eb1f3c77be64bcfd684
+  sha256: 4bc113def5d9f1c7ff272ff7ba09f843468eab80469bdbd21625a111b2c8ae7b
 
 build:
   noarch: python
