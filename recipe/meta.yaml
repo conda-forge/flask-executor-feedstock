@@ -6,23 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4bc113def5d9f1c7ff272ff7ba09f843468eab80469bdbd21625a111b2c8ae7b
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - flask
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - flask_executor
     - flask_executor.futures
